@@ -8,8 +8,7 @@ namespace AdaTheDev.AzureFunctionsE2ETests
     {
         private Process _funcHostProcess;
         private bool disposed;
-        private bool _funcHostIsReady;                
-        private readonly string _functionAppFolder;
+        private bool _funcHostIsReady;        
         private readonly bool _useShellExecute;
         
         public AzureFunctionProcess(
