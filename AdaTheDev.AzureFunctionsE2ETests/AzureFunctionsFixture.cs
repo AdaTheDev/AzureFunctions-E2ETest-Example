@@ -8,7 +8,7 @@ namespace AdaTheDev.AzureFunctionsE2ETests
     /// 
     /// </summary>
     public class AzureFunctionsFixture : IDisposable
-	{
+    {
         private readonly AzureFunctionProcess _functionApp1Process;
         private readonly AzureFunctionProcess _functionApp2Process;
         private readonly LocalSettingsSwapper _functionApp1LocalSettingsSwapper = null;
@@ -33,7 +33,7 @@ namespace AdaTheDev.AzureFunctionsE2ETests
             var tableStorageConnection = "UseDevelopmentStorage=true";
             
             var processFactory = new AzureFunctionProcessFactory(dotnetExePath, functionHostPath);
-						
+                        
             try
             {
                 if (!string.IsNullOrWhiteSpace(functionApp1E2eSettingsFileName))
