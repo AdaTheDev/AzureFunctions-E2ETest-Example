@@ -5,7 +5,6 @@ namespace AdaTheDev.SampleFunctionApp2
 {
     public static partial class QueueProcessFunctions
     {
-
         [FunctionName("QueueProcessFunctions")]
         [return: Table("AdaTheDevE2ETestTable")]
         public static MyPoco Run([QueueTrigger("AdaTheDevE2ETestQueue", Connection = "AzureWebJobsStorage")]string uniqueValue, ILogger log)
